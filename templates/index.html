@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Addition Program</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Enter Two Numbers</h2>
+    <div class="box">
+    <form action="/add" method="post" class="form">
+        <div>
+        <label for="num1">Number 1:</label><br>
+        <input type="text" id="num1" name="num1"><br><br>
+    </div>
+    <div>
+        <label for="num2">Number 2:</label><br>
+        <input type="text" id="num2" name="num2"><br><br>
+    </div>
+        <input type="submit" value="Add">
+    </form>
+</div>
+</body>
+</html>
